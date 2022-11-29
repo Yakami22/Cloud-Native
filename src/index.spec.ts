@@ -22,22 +22,22 @@ describe('get Method test', () => {
   });
 });
 
-// describe('server test', () => {
-//   it('should return 200 status with right url', async () => {
-//     expect.assertions(1);
-//     const response = await fetch('http://localhost:5000/api/v1/sysinfo', {
-//       method: 'GET',
-//     });
-//     expect(response.status).toBe(200);
-//   });
-// });
+describe('server test', () => {
+  it('should return 200 status with right url', async () => {
+    expect.assertions(1);
+    const response = await fetch('http://localhost:5000/api/v1/sysinfo', {
+      method: 'GET',
+    });
+    expect(response.status).toBe(200);
+  });
+});
 
-// describe('server test wrong url', () => {
-//   it('should return 404 status with right url', async () => {
-//     expect.assertions(1);
-//     const response = await fetch('http://localhost:5000/', {
-//       method: 'GET',
-//     });
-//     expect(response.status).toBe(404);
-//   });
-// });
+describe('server test wrong url', () => {
+  it('should return 404 status with right url', async () => {
+    expect.assertions(1);
+    const response = await fetch('http://localhost:5000/', {
+      method: 'GET',
+    });
+    expect(response.status).toBe(404);
+  });
+});

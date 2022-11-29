@@ -21,10 +21,6 @@ const Get = () => {
       response.end();
     },
   );
-
-  server.listen(port, () => {
-    console.log(`Server listening on port ${port}`);
-  });
 };
 
 export default Get;
