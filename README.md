@@ -71,7 +71,7 @@ J'ai décidé de tester mon API avec Postman. Cela donne :
 Voici un petit extrait du résultat lorsque nous rentrons la bonne URL :
 
 ```json
-system": {
+"system": {
        "manufacturer": "HP",
        "model": "OMEN by HP Laptop 15-dc1xxx",
        "version": "",
