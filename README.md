@@ -63,7 +63,7 @@ Le code de l'application se trouve principalement dans fichier **src**. Il conti
 
 J'ai décidé de tester mon API avec Postman. Cela donne :
 
-![[screens/Pasted image 20221215163332.png]]
+![alttext](screens/Pasted image 20221215163332.png)
 
 Voici un petit extrait du résultat lorsque nous rentrons la bonne URL :
 
