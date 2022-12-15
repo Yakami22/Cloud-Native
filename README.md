@@ -1,3 +1,5 @@
+# Cloud Application
+
 > Karmouni Yassine
 > ENSTA Bretagne - CSN 2023
 
@@ -9,6 +11,7 @@
 
 J'ai décidé de travailler sur Windows puisque j'avais déjà Node d'installer.
 Pour installer toutes les dépendances il suffit de faire un npm install. Pour tester que le code marche, nous pouvons run la suite de test, et si tout se passe bien, cela devrait donner ceci :
+
 ![alttext](screens/Pasted%20image%2020221215142455.png)
 
 ### Package Files
@@ -67,7 +70,7 @@ J'ai décidé de tester mon API avec Postman. Cela donne :
 
 Voici un petit extrait du résultat lorsque nous rentrons la bonne URL :
 
-```
+```json
 system": {
        "manufacturer": "HP",
        "model": "OMEN by HP Laptop 15-dc1xxx",
@@ -171,7 +174,7 @@ Voici ce qui passe lorsque nous faisons un Push :
 
 Voici un extrait de notre workflow :
 
-```
+```yml
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
@@ -211,7 +214,6 @@ Il suffit après de choisir son projet GitHub pour le déployer.
 Si tous les tests réussissent, l'application est déployée. Voici un extrait des logs pour les tests dans Railway :
 
 ```
-
 #14 [builder 9/9] RUN npm run build
 ﻿#14 sha256:91b31c40a81eb6cdf574edd42cf553935b774ed942db6d40d37e2033c833b7be
 ﻿#14 0.900
@@ -238,7 +240,7 @@ Si tous les tests réussissent, l'application est déployée. Voici un extrait d
 
 Enfin, un extrait des caractéristiques systèmes du container qui fait tourner notre application.
 
-```
+```json
 "cpu": {
 	"manufacturer": "Intel",
 	"brand": "XeonÂ®",
