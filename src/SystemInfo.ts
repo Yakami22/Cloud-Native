@@ -43,35 +43,6 @@ const systest = async () => {
   systemInformation.diskLayout = att_diskLayout;
   systemInformation.networkInterfaces = att_networkInterfaces;
 
-  // Fetch & store data
-  // await si
-  //   .cpu()
-  //   .then((data) => (systemInformation.cpu = data))
-  //   .catch((error) => console.error(error))
-  //   .then(() => si.system())
-  //   .then((data) => (systemInformation.system = data))
-  //   .catch((error) => console.error(error))
-  //   .then(() => si.mem())
-  //   .then((data) => (systemInformation.mem = data))
-  //   .catch((error) => console.error(error))
-  //   .then(() => si.osInfo())
-  //   .then((data) => (systemInformation.os = data))
-  //   .catch((error) => console.error(error))
-  //   .then(() => si.currentLoad())
-  //   .then((data) => (systemInformation.currentLoad = data))
-  //   .catch((error) => console.error(error))
-  //   .then(() => si.processes())
-  //   .then((data) => (systemInformation.processes = data))
-  //   .catch((error) => console.error(error))
-  //   .then(() => si.diskLayout())
-  //   .then((data) => (systemInformation.diskLayout = data))
-  //   .catch((error) => console.error(error))
-  //   .then(() => si.networkInterfaces())
-  //   .then((data) => (systemInformation.networkInterfaces = data))
-  //   .catch((error) => console.error(error));
-
-  // console.log(systemInformation);
-
   return systemInformation;
 };
 
