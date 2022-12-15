@@ -9,7 +9,7 @@
 
 J'ai décidé de travailler sur Windows puisque j'avais déjà Node d'installer.
 Pour installer toutes les dépendances il suffit de faire un npm install. Pour tester que le code marche, nous pouvons run la suite de test, et si tout se passe bien, cela devrait donner ceci :
-![[Pasted image 20221215142455.png]]
+![alttext](screens/Pasted%20image%2020221215142455.png)
 
 ### Package Files
 
@@ -95,7 +95,7 @@ system": {
 
 Et lorsque nous rentrons une URL inconnu, j'ai défini un message d'erreur pour remplacer la page d'erreur 404 :
 
-![[Pasted image 20221215164039.png]]
+![alttext](screens/Pasted%20image%2020221215164039.png)
 
 Je pense que le formalisme que nous avons choisi ce formalisme d'URL pour permettre d'avoir plusieurs version (v1, v2, ...) ainsi que différentes routes pour chacun.
 
@@ -116,7 +116,7 @@ npm run test:covreage
 
 Et cela nous donne :
 
-![[Pasted image 20221215171046.png]]
+![alttext](screens/Pasted%20image%2020221215171046.png)
 
 ---
 
@@ -132,8 +132,8 @@ A l'aide de multi-stage builds, j'ai créé une première image Docker simples p
 
 L'intérêt de faire un projet multi-stage est de réduire la taille finale, qui est passé de 171MB a 56MB.
 
-![[Pasted image 20221215174404.png]]
-![[Pasted image 20221215174303.png]]
+![alttext](screens/Pasted%20image%2020221215174404.png)
+![alttext](screens/Pasted%20image%2020221215174303.png)
 
 Nous pouvons maintenant publier notre image Docker.
 
@@ -149,7 +149,7 @@ Publier sur [Docker Hub](https://hub.docker.com/)
 docker push yakami22/sysinfo-api:0.0.x
 ```
 
-![[Pasted image 20221215175238.png]]
+![alttext](screens/Pasted%20image%2020221215175238.png)
 
 Pour déployer un nouveau conteneur a partir de notre image publiée :
 
@@ -194,19 +194,19 @@ jobs:
 
 Pour voir que notre worklfow fonctionne correctement :
 
-![[Pasted image 20221215180115.png]]
+![alttext](screens/Pasted%20image%2020221215180115.png)
 
 ## Deploiement
 
 Pour déployer mon application, j'ai décidé d'utiliser Railway qui propose une offre gratuite a condition de lier son compte GitHub a l'application.
 
-![[Pasted image 20221215194951.png]]
+![alttext](screens/Pasted%20image%2020221215194951.png)
 
 Il suffit après de choisir son projet GitHub pour le déployer.
 
-![[Pasted image 20221215195321.png]]
+![alttext](screens/Pasted%20image%2020221215195321.png)
 
-![[Pasted image 20221215195345.png]]
+![alttext](screens/Pasted%20image%2020221215195345.png)
 
 Si tous les tests réussissent, l'application est déployée. Voici un extrait des logs pour les tests dans Railway :
 
